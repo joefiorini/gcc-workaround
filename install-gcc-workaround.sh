@@ -4,7 +4,7 @@ set -e
 set -u
 
 # fix related to -fcommon on GCC 10 on Linux
-if [ "$(uname)" == 'Linux' ]; then
+if [ "$(uname)" == 'Darwin' ]; then
     SH=$(which sh)
     CC=$(which gcc)
 
